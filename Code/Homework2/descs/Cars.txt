@@ -1,3 +1,1 @@
-Model Year and Average of miles per gallon.
-In the graph the car models from the 80s has the max MPG.
-And the car models from the 70s has the min MPG.
+Model Year and Average of miles per gallon. In the graph the car models from the 80s has the max MPG. And the car models from the 70s has the min MPG.
