@@ -1,16 +1,25 @@
-.title {
-	font-family: 'Open Sans', sans-serif;
+span.aw {
+	display:inline-block; 
+	font-size: 0.7em;
 }
 
-.subtitle {
+h1.title {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 2.0em;
 }
 
-.visual {
+h3.subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+img.visual {
     width: 100%;
     height: auto;
+    border: 1px solid black;
 }
 
-.desc {
+p.desc {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1.0em;
 }
