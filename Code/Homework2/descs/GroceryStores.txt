@@ -1,1 +1,1 @@
-Average of Purchase Amount for each Gender broken down by Payment Method.  Color shows details about Payment Method.
+Average of Purchase Amount for each Gender broken down by Payment Method. Color shows details about Payment Method.
