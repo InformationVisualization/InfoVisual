@@ -1,5 +1,5 @@
 .title {
-
+	
 }
 
 .subtitle {
@@ -7,9 +7,10 @@
 }
 
 .visual {
-
+    width: 100%;
+    height: auto;
 }
 
 .desc {
-	
+
 }
