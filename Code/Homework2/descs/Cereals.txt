@@ -1,0 +1,1 @@
+Manufacturer and average of Sugar.  Color shows details about Manufacturer.  Size shows average of Sugar.  The marks are labeled by Manufacturer and average of Sugar.
