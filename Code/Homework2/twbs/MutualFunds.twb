@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0216.1925                               -->
+<workbook source-build='10.2.0 (10200.17.0216.1925)' source-platform='win' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='a1-mutualfunds' inline='true' name='federated.1uj4a5i1teyxfi1gtj4m20v0ffpm' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='a1-mutualfunds' name='textscan.14fbm0x0diext31c417rg1kor9ja'>
+            <connection class='textscan' directory='C:/Users/harsh/Documents/KSU Spring 2017/Data' filename='a1-mutualfunds.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.14fbm0x0diext31c417rg1kor9ja' name='a1-mutualfunds.csv' table='[a1-mutualfunds#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+            <column datatype='real' name='F4' ordinal='3' />
+            <column datatype='real' name='F5' ordinal='4' />
+            <column datatype='real' name='F6' ordinal='5' />
+            <column datatype='real' name='F7' ordinal='6' />
+            <column datatype='real' name='F8' ordinal='7' />
+            <column datatype='real' name='F9' ordinal='8' />
+            <column datatype='string' name='F10' ordinal='9' />
+            <column datatype='real' name='F11' ordinal='10' />
+            <column datatype='integer' name='F12' ordinal='11' />
+            <column datatype='integer' name='F13' ordinal='12' />
+            <column datatype='string' name='F14' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F11</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F11]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F11</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F12</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F12]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F12</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F13</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F13]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F13</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[a1-mutualfunds.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='rating' datatype='string' name='[F10]' role='dimension' type='nominal' />
+      <column caption='Expense ratio' datatype='real' name='[F11]' role='measure' type='quantitative' />
+      <column caption='Mgr Tenure' datatype='integer' name='[F12]' role='measure' type='quantitative' />
+      <column caption='Net assets' datatype='integer' name='[F13]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[F14]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column caption='Symbol' datatype='string' name='[F2]' role='dimension' type='nominal' />
+      <column caption='YTD' datatype='real' name='[F3]' role='measure' type='quantitative' />
+      <column caption='3MO' datatype='real' name='[F4]' role='measure' type='quantitative' />
+      <column caption='1YR' datatype='real' name='[F5]' role='measure' type='quantitative' />
+      <column caption='3YR' datatype='real' name='[F6]' role='measure' type='quantitative' />
+      <column caption='5YR' datatype='real' name='[F7]' role='measure' type='quantitative' />
+      <column caption='10YR' datatype='real' name='[F8]' role='measure' type='quantitative' />
+      <column caption='Yield' datatype='real' name='[F9]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.375' measure-ordering='alphabetic' measure-percentage='0.625' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>Category and Average 5 and 10 years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='a1-mutualfunds' name='federated.1uj4a5i1teyxfi1gtj4m20v0ffpm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1uj4a5i1teyxfi1gtj4m20v0ffpm'>
+            <column caption='Category' datatype='string' name='[F14]' role='dimension' type='nominal' />
+            <column caption='5YR' datatype='real' name='[F7]' role='measure' type='quantitative' />
+            <column caption='10YR' datatype='real' name='[F8]' role='measure' type='quantitative' />
+            <column-instance column='[F7]' derivation='Avg' name='[avg:F7:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F8]' derivation='Avg' name='[avg:F8:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F14]' derivation='None' name='[none:F14:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F8:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F8:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[none:F14:nk]' value='152' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F7:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F7:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F7:qk]' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' y-axis-name='[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F7:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='4' y-axis-name='[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F8:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F7:qk] + [federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[avg:F8:qk])</rows>
+        <cols>[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[none:F14:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[none:F14:nk]</field>
+            <field>[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[none:F1:nk]</field>
+            <field>[federated.1uj4a5i1teyxfi1gtj4m20v0ffpm].[none:F2:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      CYf2Zh7/F3YXAYpcLBSgAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
