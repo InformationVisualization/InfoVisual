@@ -1,0 +1,26 @@
+span.aw {
+	display:inline-block; 
+	font-size: 0.7em;
+}
+
+h1.title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.0em;
+}
+
+h3.subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+img.visual {
+    width: 80%;
+    height: auto;
+    border: 1px solid black;
+    padding: 1em 1em 1em 1em;
+}
+
+p.desc {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.0em;
+}
