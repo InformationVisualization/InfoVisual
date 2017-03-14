@@ -1,0 +1,2 @@
+Category and Average of 5 and 10 Years.
+This visualization is comparing the growth between this two years with the categories.
