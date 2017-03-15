@@ -12,10 +12,10 @@ var svg2 = d3.select("#film")
     .attr("height", diameter2)
     .attr("class", "bubble");
 
-d3.csv("data/cereals-avg.csv", function(error, data){
+d3.csv("data/film-genre-pop.csv", function(error, data){
 
     //convert numerical values from strings to numbers
-    data = data.map(function(d){ d.value = +d["Sugar"]; return d; });
+    data = data.map(function(d){ d.value = +d["Popularity"]; return d; });
 
     //bubbles needs very specific format, convert data to this.
     var nodes2 = bubble2.nodes({children:data}).filter(function(d) { return !d.children; });
@@ -39,7 +39,7 @@ d3.csv("data/cereals-avg.csv", function(error, data){
         .attr("x", function(d){ return d.x; })
         .attr("y", function(d){ return d.y + 5; })
         .attr("text-anchor", "middle")
-        .text(function(d){ var text=d["Manufacturer"]; text+=": "; text+=d["Sugar"]; return text; })
+        .text(function(d){ return d["Genre"]; })
         .style({
             "fill":"white", 
             "font-family":"Helvetica Neue, Helvetica, Arial, san-serif",
