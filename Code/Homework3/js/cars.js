@@ -16,7 +16,7 @@ var area = d3.area()
     .x(function(d) { return x(d.ModelYear); })
     .y1(function(d) { return y(d.MPG); });
 
-d3.tsv("data.tsv", function(d) {
+d3.tsv("data/cars.tsv", function(d) {
   d.ModelYear = parseTime(d.ModelYear);
   d.MPG = +d.MPG;
   return d;
