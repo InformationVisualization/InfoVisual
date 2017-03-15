@@ -39,7 +39,7 @@ d3.csv("data/cereals-avg.csv", function(error, data){
         .attr("x", function(d){ return d.x; })
         .attr("y", function(d){ return d.y + 5; })
         .attr("text-anchor", "middle")
-        .text(function(d){ var text=d["Manufacturer"]; text+=": "; text+=d["Sugar"]; return text; })
+        .text(function(d){ var text=d["Manufacturer"]; text+=": "; text+=d["Sugar"]; text+="g"; return text; })
         .style({
             "fill":"white", 
             "font-family":"Helvetica Neue, Helvetica, Arial, san-serif",
