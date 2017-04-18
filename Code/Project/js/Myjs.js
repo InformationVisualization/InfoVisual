@@ -16,7 +16,7 @@ var grayscale = L.tileLayer(mbUrl, {
         attribution: mbAttr
     }),
     streets = L.tileLayer(mbUrl, {
-        id: 'mapbox.streets',
+        id: 'mapbox.dark',
         attribution: mbAttr
     });
 
@@ -140,7 +140,7 @@ function DrawRS(trips) {
 		TPT = TArr[trips[j].tripid].split(',');  		 // Find each segment in TArr Dictionary. 
 		var polyline = new L.Polyline([]).addTo(drawnItems);
         polyline.setStyle({
-            color: 'red',                      // polyline color
+            color: '#e6ffe6',                      // polyline color
 			weight: 1,                         // polyline weight
 			opacity: 0.5,                      // polyline opacity
 			smoothFactor: 1.0  
