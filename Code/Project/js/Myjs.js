@@ -11,11 +11,7 @@ var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</
     mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGxhbmVtYWQiLCJhIjoiemdYSVVLRSJ9.g3lbg_eN0kztmsfIPxa9MQ';
 
 
-var grayscale = L.tileLayer(mbUrl, {
-        id: 'mapbox.light',
-        attribution: mbAttr
-    }),
-    streets = L.tileLayer(mbUrl, {
+var streets = L.tileLayer(mbUrl, {
         id: 'mapbox.dark',
         attribution: mbAttr
     });
@@ -35,8 +31,7 @@ var map = L.map('map', {
 });
 
 var baseLayers = {
-    "Grayscale": grayscale, // Grayscale tile layer
-    "Streets": streets, // Streets tile layer
+    "Streets": streets // Streets tile layer
 };
 
 layerControl = L.control.layers(baseLayers, null, {
