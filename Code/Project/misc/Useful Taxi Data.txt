@@ -1,0 +1,18 @@
+Useful Taxi Data
+
+== Speed ==
+minspeed (Double, kmph)
+maxspeed (Double, kmph)
+avspeed (Double, kmph)
+
+== Distance ==
+distance (Double, km)
+
+== Times ==
+** All data is from the same day
+starttime (DateTime)
+endtime (DateTime)
+duration (Int, seconds)
+
+== Streets ==
+streetnames (String Array)
