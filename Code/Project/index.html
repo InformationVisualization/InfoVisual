@@ -46,6 +46,12 @@
 	<script src="js/communist.js"></script>
 	<script src="js/TArr.js"></script>
 
+	
+	<script src="build/d3.js" charset="utf-8"></script>
+	<script src="build/nv.d3.js"></script>
+	<script src="lib/stream_layers.js"></script>
+	<link rel="stylesheet" type="text/css" href="build/nv.d3.css">
+
   </head>
   <body>
     <!-- Navigation -->
@@ -61,13 +67,28 @@
     </nav>
 	 <div id="map"></div>
 	 <div id="rightside">
-		<img src="test.jpg" style="margin:auto; width:100%;display:block" />
+		<!--<img src="test.jpg" style="margin:auto; width:100%;display:block" />-->
+		<button id="viz1" onclick="distVSspeed(data)">Distance VS Speed Visualization</button>
+		<svg id="chart1"></svg>
+
+		
+
+		<!--<svg id="chart2"></svg>-->
 	 </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<!-- Your js File -->
     <script src="js/Myjs.js"></script>
+    <script src="js/iViz1.js"></script>
+    <script src="js/iViz2.js"></script>
+    <!--<script src="js/iViz3.js"></script>-->
   </body>
 </html>
+
+
+<script>
+$("#viz1").hide();
+</script>
