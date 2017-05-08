@@ -32,18 +32,21 @@ html {
 	background-color: snow;
 	left: 70%;
 	overflow-y: auto;
+	background-color: #e9ebee;
 }
 
 .graph-container {
 	border: 2px solid black;
-	margin: 4px;
+	margin: 8px;
+	background-color: #ffffff;
 }
 
 .graph-title {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.0em;
 	font-weight: bold;
-	margin-left: 10px;
+	margin-left: 15px;
+	margin-top: 15px;
 }
 
 #speed-groups-container {
