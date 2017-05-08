@@ -20,15 +20,15 @@ function distVSduration(result)
               return a.distance - b.distance;
             })
 
-            /*var top10trips = [];
+            var top10trips = [];
             for(var i = 0; i < 10; ++i)
             {
               top10trips.push(durations[i]);
-            }*/
+            }
 
             var durationData = [{
               key: "Distance",
-              values: durations
+              values: top10trips
             }];
             console.log(durationData);
              nv.addGraph(function() {
