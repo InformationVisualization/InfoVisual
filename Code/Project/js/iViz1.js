@@ -26,7 +26,7 @@ function speedVSduration(result) {
     
 
     var circleData = [{
-      key: "avspeed",
+      key: "Average Speed",
       values: circle
     }];
     console.log(circleData);
@@ -43,7 +43,7 @@ function speedVSduration(result) {
 
     //Axis labels
     chart.xAxis.axisLabel('Duration (mins)');
-    chart.yAxis.axisLabel('Ave Speed (km)');
+    chart.yAxis.axisLabel('Average Speed (kmph)');
 
     //Hide legend
     chart.showLegend(false);
