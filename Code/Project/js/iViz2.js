@@ -42,6 +42,8 @@ function distVSduration(result) {
     chart.xAxis.axisLabel('Duration (mins)');
     chart.yAxis.axisLabel('Distance (km)');
 
+    //Hide legend
+    chart.showLegend(false);
 
     //var myData = randomData(4,40);
     d3.select('#chart2')
