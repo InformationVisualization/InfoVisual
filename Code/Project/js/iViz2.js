@@ -1,55 +1,53 @@
+//visualization 2
 
-function barChart02(distance, duration)
+function Circles(x, y, size)
 {
-  this.distance = distance;
-  this.duration = duration;
+  this.x = x;
+  this.y = y;
+  this.size = size;
+  this.shape = 'circle';
 }
 
-function distVSduration(result)
-        {
-          if(result != null && result != undefined)
-          {
-            var durations = [];
-            for(var i = 0; i < result.length; ++i)
-            {
-              var results = result[i];
-              durations.push(new barChart02(results.duration, results.distance/1000));
-            }
+function distVSduration(result) {
+  if (result != null && result != undefined)
+  {
+    var circle =[];
 
-            durations.sort(function(a,b){
-              return a.distance - b.distance;
-            })
+    for (var i = 0; i < result.length; ++i)
+    {
+      var results = result[i];
 
-            var top10trips = [];
-            for(var i = 0; i < 10; ++i)
-            {
-              top10trips.push(durations[i]);
-            }
+      circle.push(new Circles(results.duration, results.distance/1000, 5));
+    }
 
-            var durationData = [{
-              key: "Distance",
-              values: top10trips
-            }];
-            console.log(durationData);
-             nv.addGraph(function() {
-                var chart = nv.models.discreteBarChart()
-                    .x(function(d) { return d.distance })
-                    .y(function(d) { return d.duration })
-                    .staggerLabels(true)
-                    //.staggerLabels(historicalBarChart[0].values.length > 8)
-                    .showValues(true)
-                    .duration(250)
-                    ;
+    var circleData = [{
+      key: "distance",
+      values: circle
+    }];
+    console.log(circleData);
+    nv.addGraph(function() {
+      var chart = nv.models.scatterChart()
+          .showDistX(true)    //showDist, when true, will display those little distribution lines on the axis.
+          .showDistY(true)
+          .color(d3.scale.category10().range());
 
-                d3.select('#chart2')
-                    .attr('width', 400)
-                    .attr('height', 400)
-                    .datum(durationData)
-                    .call(chart);
 
-                nv.utils.windowResize(chart.update);
-                return chart;
-            });
-          }
-           
-        }
+    //Axis settings
+    chart.xAxis.tickFormat(d3.format('.02f'));
+    chart.yAxis.tickFormat(d3.format('.02f'));
+
+
+    //var myData = randomData(4,40);
+    d3.select('#chart3')
+      .attr('width', 400)
+      .attr('height', 400)
+      .datum(circleData)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+    });
+
+  }
+}
