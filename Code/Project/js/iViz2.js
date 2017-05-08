@@ -17,7 +17,7 @@ function distVSduration(result) {
     {
       var results = result[i];
 
-      circle.push(new Circles(results.duration, results.distance/1000, 5));
+      circle.push(new Circles(results.duration/60, results.distance/1000, 5));
     }
 
     var circleData = [{
