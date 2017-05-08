@@ -45,6 +45,9 @@ function distVSduration(result) {
     //Hide legend
     chart.showLegend(false);
 
+    //Tooltip format
+    chart.tooltip.valueFormatter(d3.format('.02f'));
+
     //var myData = randomData(4,40);
     d3.select('#chart2')
       .attr('width', 400)
