@@ -126,6 +126,7 @@ map.on('draw:created', function (e) {
 	}
 	drawnItems.addLayer(layer);			//Add your Selection to Map  
 	$("#viz1").show();
+	$("#viz2").show();
 });
 //*****************************************************************************************************************************************
 // DrawRS Function:
