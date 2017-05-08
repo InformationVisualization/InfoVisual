@@ -147,7 +147,7 @@ map.on('draw:created', function (e) {
 		initSpeedGroups(result);
 		initdurationGroups(result);
 
-		document.getElementById("selected-trips").innerHTML = "Selected trips: " + result.length;
+		document.getElementById("selected-trips").innerHTML = result.length;
 
 		// Show sidebar
 		document.getElementById('no-selection').style.display = 'none';
