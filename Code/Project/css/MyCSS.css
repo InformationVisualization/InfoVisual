@@ -33,3 +33,11 @@ html {
 	font-weight: bold;
 	margin-left: 10px;
 }
+
+#speed-groups-container {
+	height: 350px;
+}
+
+#duration-groups-container {
+	height: 350px;
+}
