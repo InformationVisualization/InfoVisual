@@ -15,7 +15,7 @@ html {
 
 #rightside {
 	width: 30%;
-	height: 100%;
+	height: calc(100% - 50px);
 	position: fixed; 
 	background-color: snow;
 	left: 70%;
