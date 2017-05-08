@@ -51,6 +51,7 @@ html {
 	font-weight: bold;
 	margin-left: 15px;
 	margin-top: 15px;
+	margin-right: 15px;
 }
 
 #speed-groups-container {
@@ -72,4 +73,5 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.8em;
 	margin-left: 15px;
+	margin-right: 15px;
 }
