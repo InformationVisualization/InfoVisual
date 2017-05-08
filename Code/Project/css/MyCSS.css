@@ -53,6 +53,10 @@ html {
 	margin-top: 15px;
 }
 
+.vizButton {
+	margin-left: 8px;
+}
+
 #speed-groups-container {
 	height: 350px;
 }
