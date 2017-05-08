@@ -23,7 +23,7 @@ function distVSduration(result) {
     }
 
     var circleData = [{
-      key: "distance",
+      key: "Distance",
       values: circle
     }];
     console.log(circleData);
@@ -47,6 +47,10 @@ function distVSduration(result) {
 
     //Tooltip format
     chart.tooltip.valueFormatter(d3.format('.02f'));
+
+    chart.tooltip.valueFormatter(function (d, i) {
+        return round(d, 1) + ' km';
+    });
 
     //var myData = randomData(4,40);
     d3.select('#chart2')
