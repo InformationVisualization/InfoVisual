@@ -41,3 +41,10 @@ html {
 #duration-groups-container {
 	height: 350px;
 }
+
+.graph-credit {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8em;
+	margin-right: 10px;
+	text-align: right;
+}
