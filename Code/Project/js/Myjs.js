@@ -123,7 +123,7 @@ map.on('draw:created', function (e) {
 		data = result;
 		DrawRS(result);
 
-		initSpeedGroups();
+		initSpeedGroups(result);
 		});
 	}
 	drawnItems.addLayer(layer);			//Add your Selection to Map  
