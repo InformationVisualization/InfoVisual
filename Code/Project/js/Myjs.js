@@ -124,6 +124,7 @@ map.on('draw:created', function (e) {
 		DrawRS(result);
 
 		initSpeedGroups(result);
+		initdurationGroups(result);
 		});
 	}
 	drawnItems.addLayer(layer);			//Add your Selection to Map  
