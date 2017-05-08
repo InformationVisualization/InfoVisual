@@ -64,6 +64,12 @@ html {
 .graph-credit {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.8em;
-	margin-right: 10px;
+	margin-right: 15px;
 	text-align: right;
+}
+
+.project-credit {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8em;
+	margin-left: 15px;
 }
