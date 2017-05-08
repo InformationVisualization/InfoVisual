@@ -1,5 +1,26 @@
 //Init Map
 //*******************************************************************************************************************************************************
+
+window.onload = function() {
+	var divsToHide = document.getElementsByClassName("leaflet-control-layers"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.visibility = "hidden"; // or
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+
+	divsToHide = document.getElementsByClassName("leaflet-draw-edit-edit"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.visibility = "hidden"; // or
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+
+   	divsToHide = document.getElementsByClassName("leaflet-draw-edit-remove"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.visibility = "hidden"; // or
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+};
+
 var lat = 41.141376;
 var lng = -8.613999;
 var zoom = 14;
