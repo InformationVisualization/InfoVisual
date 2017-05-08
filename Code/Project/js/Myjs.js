@@ -125,6 +125,11 @@ map.on('draw:created', function (e) {
 
 		initSpeedGroups(result);
 		initdurationGroups(result);
+
+		// Show sidebar
+		document.getElementById('no-selection').style.display = 'none';
+		document.getElementById('graphs').style.display = 'inline';
+
 		});
 	}
 	drawnItems.addLayer(layer);			//Add your Selection to Map  

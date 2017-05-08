@@ -17,6 +17,14 @@ html {
 	z-index: 1;
 }
 
+#graphs {
+	display: none;
+}
+
+#no-selection {
+	display: inline;
+}
+
 #rightside {
 	width: 30%;
 	height: calc(100% - 50px);
