@@ -31,40 +31,38 @@ function speedVSduration(result) {
     }];
     console.log(circleData);
     nv.addGraph(function() {
-      var chart = nv.models.scatterChart()
+      var speedVsDurationchart = nv.models.scatterChart()
           .showDistX(true)    //showDist, when true, will display those little distribution lines on the axis.
           .showDistY(true)
           .color(d3.scale.category10().range());
 
 
     //Axis settings
-    chart.xAxis.tickFormat(d3.format('.0f'));
-    chart.yAxis.tickFormat(d3.format('.0f'));
+    speedVsDurationchart.xAxis.tickFormat(d3.format('.0f'));
+    speedVsDurationchart.yAxis.tickFormat(d3.format('.0f'));
 
     //Axis labels
-    chart.xAxis.axisLabel('Duration (mins)');
-    chart.yAxis.axisLabel('Average Speed (kmph)');
+    speedVsDurationchart.xAxis.axisLabel('Duration (mins)');
+    speedVsDurationchart.yAxis.axisLabel('Average Speed (kmph)');
 
     //Hide legend
-    chart.showLegend(false);
+    speedVsDurationchart.showLegend(false);
 
     //Tooltip format
-    chart.tooltip.valueFormatter(d3.format('.02f'));
-
-    /*chart.tooltip.valueFormatter(function (d, i) {
-        return round(d, 1) + ' km';
-    });*/
+    speedVsDurationchart.tooltip.valueFormatter(function (d, i) {
+        return round(d, 1) + ' kmph';
+    });
 
     //var myData = randomData(4,40);
     d3.select('#chart1')
       .attr('width', 400)
       .attr('height', 400)
       .datum(circleData)
-      .call(chart);
+      .call(speedVsDurationchart);
 
-    nv.utils.windowResize(chart.update);
+    nv.utils.windowResize(speedVsDurationchart.update);
 
-    return chart;
+    return speedVsDurationchart;
     });
 
   }

@@ -128,6 +128,11 @@ function clearMap() {
 // Draw rectangle on Map Event for Query :
 // Click the small box on Map and start drawing to do query.
 //*****************************************************************************************************************************************	
+
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
 var data;
 map.on('draw:created', function (e) {
 	
