@@ -45,6 +45,11 @@ function initdurationGroups(result) {
                 .y(function(d) { return d.y })
                 .showTooltipPercent(true);
 
+            // Tooltips
+            durationGroupsChart.tooltip.valueFormatter(function (d, i) {
+                return d + ' Trips';
+            });
+
             d3.select("#duration-groups-svg")
                 .datum(durationGroupsData)
                 .call(durationGroupsChart);

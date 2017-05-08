@@ -33,6 +33,11 @@ function initSpeedGroups(result) {
                 .y(function(d) { return d.y })
                 .showTooltipPercent(true);
 
+            // Tooltips
+            speedGroupsChart.tooltip.valueFormatter(function (d, i) {
+                return d + ' Trips';
+            });
+
             d3.select("#speed-groups-svg")
                 .datum(speedGroupsData)
                 .call(speedGroupsChart);
