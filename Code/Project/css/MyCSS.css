@@ -6,6 +6,10 @@ html {
 	margin: 0; 
 }
 
+#title {
+	font-family: 'Open Sans', sans-serif;
+}
+
 #map {
 	width: 70%;
 	height: 100%;
