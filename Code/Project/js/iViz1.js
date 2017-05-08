@@ -1,3 +1,6 @@
+//Harsh Patel
+//Information Vizualization
+//05/08/2017
 
 function barChart(distance, avspeed)
 {
