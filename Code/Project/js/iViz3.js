@@ -37,6 +37,7 @@ function initSpeedGroups(result) {
                 .datum(speedGroupsData)
                 .call(speedGroupsChart);
 
+            nv.utils.windowResize(speedGroupsChart.update);
             return speedGroupsChart;
         });
     }
