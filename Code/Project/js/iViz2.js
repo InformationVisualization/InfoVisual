@@ -38,7 +38,7 @@ function distVSduration(result) {
 
 
     //var myData = randomData(4,40);
-    d3.select('#chart3')
+    d3.select('#chart2')
       .attr('width', 400)
       .attr('height', 400)
       .datum(circleData)
