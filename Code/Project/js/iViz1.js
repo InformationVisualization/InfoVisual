@@ -28,15 +28,15 @@ function speedVSduration(result)
               return a.duration - b.duration;
             })
 
-            var top50trips = [];
-            for(var i = 0; i < 50; ++i)
+            var top5trips = [];
+            for(var i = 0; i < 5; ++i)
             {
-              top50trips.push(speed[i]);
+              top5trips.push(speed[i]);
             }
 
             var speedData = [{
               key: "duration",
-              values: top50trips
+              values: top5trips
             }];
             console.log(speedData);
              nv.addGraph(function() {
