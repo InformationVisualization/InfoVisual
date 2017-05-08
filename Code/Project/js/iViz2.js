@@ -35,8 +35,8 @@ function distVSduration(result) {
 
 
     //Axis settings
-    chart.xAxis.tickFormat(d3.format('.02f'));
-    chart.yAxis.tickFormat(d3.format('.02f'));
+    chart.xAxis.tickFormat(d3.format('.0f'));
+    chart.yAxis.tickFormat(d3.format('.0f'));
 
     //Axis labels
     chart.xAxis.axisLabel('Duration (mins)');
