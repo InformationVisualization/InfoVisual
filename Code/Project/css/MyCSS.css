@@ -26,3 +26,10 @@ html {
 	margin: 2px;
 	height: 18%;
 }
+
+.graph-title {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.0em;
+	font-weight: bold;
+	margin-left: 10px;
+}
