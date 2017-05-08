@@ -1,18 +1,19 @@
 //Harsh Patel
 //Information Vizualization
 //05/08/2017
+//speedVSduration
 
 function round(value, decimals) {
   return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 }
 
-function barChart(distance, avspeed)
+function barChart(avspeed, duration)
 {
-  this.distance = distance;
   this.avspeed = avspeed;
+  this.duration = duration;
 }
 
-function distVSspeed(result)
+function speedVSduration(result)
         {
           if(result != null && result != undefined)
           {
@@ -20,27 +21,27 @@ function distVSspeed(result)
             for(var i = 0; i < result.length; ++i)
             {
               var results = result[i];
-              speed.push(new barChart(results.avspeed, results.distance/1000));
+              speed.push(new barChart(results.avspeed, results.duration));
             }
 
             speed.sort(function(a,b){
-              return a.distance - b.distance;
+              return a.duration - b.duration;
             })
 
-            var top10trips = [];
-            for(var i = 0; i < 10; ++i)
+            var top50trips = [];
+            for(var i = 0; i < 50; ++i)
             {
-              top10trips.push(speed[i]);
+              top50trips.push(speed[i]);
             }
 
             var speedData = [{
-              key: "Distance",
-              values: top10trips
+              key: "duration",
+              values: top50trips
             }];
             console.log(speedData);
              nv.addGraph(function() {
                 var chart = nv.models.discreteBarChart()
-                    .x(function(d) { return round(d.distance, 1) })
+                    .x(function(d) { return round(d.duration, 1) })
                     .y(function(d) { return d.avspeed })
                     .staggerLabels(true)
                     //.staggerLabels(historicalBarChart[0].values.length > 8)
