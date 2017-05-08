@@ -1,4 +1,6 @@
-//visualization 2
+//Harsh Patel
+//Information Visualization
+//05/08/2017
 
 function Circles(x, y, size)
 {
