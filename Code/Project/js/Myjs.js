@@ -144,6 +144,7 @@ map.on('draw:created', function (e) {
 		data = result;
 		DrawRS(result);
 
+		distVSspeed(result);
 		distVSduration(result);
 		initSpeedGroups(result);
 		initdurationGroups(result);
