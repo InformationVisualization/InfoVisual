@@ -38,6 +38,10 @@ function distVSduration(result) {
     chart.xAxis.tickFormat(d3.format('.02f'));
     chart.yAxis.tickFormat(d3.format('.02f'));
 
+    //Axis labels
+    chart.xAxis.axisLabel('Duration (mins)');
+    chart.yAxis.axisLabel('Distance (km)');
+
 
     //var myData = randomData(4,40);
     d3.select('#chart2')
