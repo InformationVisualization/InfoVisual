@@ -46,6 +46,9 @@ function distVSspeed(result)
                     .duration(250)
                     ;
 
+               //Axis labels
+    chart.xAxis.axisLabel('Distance (Km)');
+    chart.yAxis.axisLabel('Speed (Kmph)');
 
                 d3.select('#chart5')
                     .attr('width', 400)
