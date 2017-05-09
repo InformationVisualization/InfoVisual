@@ -38,7 +38,7 @@ function distVSspeed(result)
              nv.addGraph(function() {
                 var distVSspeedChart = nv.models.discreteBarChart()
                     .x(function(d) { return round(d.distance, 1) })
-                    .y(function(d) { return d.avspeed*10 })
+                    .y(function(d) { return d.avspeed/10 })
                     .staggerLabels(true)
                 //.staggerLabels(historicalBarChart[0].values.length > 8)
                     .showValues(true)
