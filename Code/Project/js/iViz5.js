@@ -16,7 +16,7 @@ function distVSspeed(result)
             for(var i = 0; i < result.length; ++i)
             {
               var results = result[i];
-              speed.push(new barChart(results.avspeed, results.distance/10));
+              speed.push(new barChart(results.avspeed, results.distance));
             }
 
             speed.sort(function(a,b){
@@ -47,7 +47,7 @@ function distVSspeed(result)
                
                
     distVSspeedChart.xAxis.axisLabel('Distance (Km)');
-    distVSspeedChart.yAxis.axisLabel('Avg Speed (Kmph)');
+    distVSspeedChart.yAxis.axisLabel('AvgSpeed (Kmph)');
 
                 d3.select('#chart5')
                     .attr('width', 400)
