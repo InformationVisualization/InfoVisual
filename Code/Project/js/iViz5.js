@@ -1,5 +1,5 @@
 function round(value, decimals) {
-  return Number(Math.round(value+'e'+decimals)+'e-'+decimals/100);
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 } 
 
 function barChart(distance, avspeed)
@@ -16,7 +16,7 @@ function distVSspeed(result)
             for(var i = 0; i < result.length; ++i)
             {
               var results = result[i];
-              speed.push(new barChart(results.avspeed/10, results.distance, 10 );
+              speed.push(new barChart(results.avspeed/1000, results.distance, 5 );
             }
 
             speed.sort(function(a,b){
@@ -37,13 +37,12 @@ function distVSspeed(result)
             console.log(speedData);
              nv.addGraph(function() {
                 var distVSspeedChart = nv.models.discreteBarChart()
-                    .x(function(d) { return round(d.distance, 1) })
+                    .x(function(d) { return round(d.distance, 5) })
                     .y(function(d) { return d.avspeed })
                     .staggerLabels(true)
-
-                    //.staggerLabels(historicalBarChart[0].values.length > 8)
+                //.staggerLabels(historicalBarChart[0].values.length > 8)
                     .showValues(true)
-                    .duration(250)
+                    .duration(1000)
                     ;
                
                
