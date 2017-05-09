@@ -46,7 +46,10 @@ function distVSspeed(result)
                     .duration(250)
                     ;
 
-               //Axis labels
+    distVSspeedChart.tooltip.valueFormatter(function (d, i) {
+        return round(d, 1) + ' kmph';
+    });
+               
     distVSspeedChart.xAxis.axisLabel('Distance (Km)');
     distVSspeedChart.yAxis.axisLabel('Speed (Kmph)');
 
