@@ -36,7 +36,7 @@ function distVSspeedChart(result)
 
             console.log(speedData);
              nv.addGraph(function() {
-                var chart = nv.models.discreteBarChart()
+                var distVSspeedChart = nv.models.discreteBarChart()
                     .x(function(d) { return round(d.distance, 1) })
                     .y(function(d) { return d.avspeed })
                     .staggerLabels(true)
@@ -54,11 +54,11 @@ function distVSspeedChart(result)
                     .attr('width', 400)
                     .attr('height', 400)
                     .datum(speedData)
-                    .call(chart);
+                    .call(distVSspeedChart);
 
-                nv.utils.windowResize(chart.update);
+                nv.utils.windowResize(distVSspeedChart.update);
 
-                return chart;
+                return distVSspeedChart;
             });
           }
            
