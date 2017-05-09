@@ -16,7 +16,7 @@ function distVSspeed(result)
             for(var i = 0; i < result.length; ++i)
             {
               var results = result[i];
-              speed.push(new barChart(results.avspeed, results.distance/1000));
+              speed.push(new barChart(results.avspeed, results.distance));
             }
 
             speed.sort(function(a,b){
@@ -45,10 +45,9 @@ function distVSspeed(result)
                     .showValues(true)
                     .duration(250)
                     ;
-
-    distVSspeedChart.tooltip.valueFormatter(function (d, i) {
-        return round(d, 1) + ' kmph';
-    });
+               
+    distVSspeedChart.xAxis.tickFormat(d3.format('.0f'));
+    distVSspeedChart.yAxis.tickFormat(d3.format('.0f'));
                
     distVSspeedChart.xAxis.axisLabel('Distance (Km)');
     distVSspeedChart.yAxis.axisLabel('Speed (Kmph)');
