@@ -16,7 +16,7 @@ function distVSspeed(result)
             for(var i = 0; i < result.length; ++i)
             {
               var results = result[i];
-              speed.push(new barChart(results.avspeed*10, results.distance/1000));
+              speed.push(new barChart(results.avspeed*10, results.distance));
             }
 
             speed.sort(function(a,b){
