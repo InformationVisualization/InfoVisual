@@ -45,9 +45,13 @@ function distVSspeed(result)
                     .duration(250)
                     ;
                
+            // Tooltips
+            distVSspeedChart.tooltip.valueFormatter(function (d, i) {
+                return round(d, 2) + ' kmph';
+            });
                
-    distVSspeedChart.xAxis.axisLabel('Distance (Km)');
-    distVSspeedChart.yAxis.axisLabel('AvgSpeed (Kmph)');
+    distVSspeedChart.xAxis.axisLabel('Distance (km)');
+    distVSspeedChart.yAxis.axisLabel('Average Speed (kmph)');
 
                 d3.select('#chart5')
                     .attr('width', 400)
