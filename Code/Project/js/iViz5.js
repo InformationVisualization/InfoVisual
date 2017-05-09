@@ -16,7 +16,7 @@ function distVSspeed(result)
             for(var i = 0; i < result.length; ++i)
             {
               var results = result[i];
-              speed.push(new barChart(results.avspeed*10, results.distance));
+              speed.push(new barChart(results.avspeed, results.distance/1000));
             }
 
             speed.sort(function(a,b){
@@ -38,7 +38,7 @@ function distVSspeed(result)
              nv.addGraph(function() {
                 var distVSspeedChart = nv.models.discreteBarChart()
                     .x(function(d) { return round(d.distance, 1) })
-                    .y(function(d) { return d.avspeed })
+                    .y(function(d) { return d.avspeed*10 })
                     .staggerLabels(true)
                 //.staggerLabels(historicalBarChart[0].values.length > 8)
                     .showValues(true)
