@@ -1,5 +1,5 @@
 function round(value, decimals) {
-  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals/100);
 } 
 
 function barChart(distance, avspeed)
@@ -16,7 +16,7 @@ function distVSspeed(result)
             for(var i = 0; i < result.length; ++i)
             {
               var results = result[i];
-              speed.push(new barChart(results.avspeed, results.distance/100);
+              speed.push(new barChart(results.avspeed, results.distance);
             }
 
             speed.sort(function(a,b){
@@ -46,11 +46,6 @@ function distVSspeed(result)
                     .duration(250)
                     ;
                
-                distVSspeedChart.tooltip.valueFormatter(function (d, i) {
-                return d + ' Kmph';
-            });
-               
-               distVSspeedChart.showLegend(false);
                
     distVSspeedChart.xAxis.axisLabel('Distance (Km)');
     distVSspeedChart.yAxis.axisLabel('Speed (Kmph)');
