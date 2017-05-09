@@ -153,6 +153,7 @@ map.on('draw:created', function (e) {
 		distVSduration(result);
 		initSpeedGroups(result);
 		initdurationGroups(result);
+		distVSspeed(result);		 
 
 		document.getElementById("selected-trips").innerHTML = result.length;
 
