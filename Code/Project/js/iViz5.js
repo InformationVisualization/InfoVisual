@@ -1,3 +1,7 @@
+function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+} 
+
 function barChart(distance, avspeed)
 {
   this.distance = distance;
@@ -33,7 +37,7 @@ function distVSspeed(result)
             console.log(speedData);
              nv.addGraph(function() {
                 var chart = nv.models.discreteBarChart()
-                    .x(function(d) { return d.distance })
+                    .x(function(d) { return round(d.distance, 1) })
                     .y(function(d) { return d.avspeed })
                     .staggerLabels(true)
 
