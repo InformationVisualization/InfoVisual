@@ -8,7 +8,7 @@ function barChart(distance, avspeed)
   this.avspeed = avspeed;
 }
 
-function distVSspeedChart(result)
+function distVSspeed(result)
         {
           if(result != null && result != undefined)
           {
