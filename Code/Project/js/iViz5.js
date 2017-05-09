@@ -8,7 +8,7 @@ function barChart(distance, avspeed)
   this.avspeed = avspeed;
 }
 
-function distVSspeed(result)
+function distVSspeedChart(result)
         {
           if(result != null && result != undefined)
           {
@@ -47,8 +47,8 @@ function distVSspeed(result)
                     ;
 
                //Axis labels
-    barChart.xAxis.axisLabel('Distance (Km)');
-    barChart.yAxis.axisLabel('Speed (Kmph)');
+    distVSspeedChart.xAxis.axisLabel('Distance (Km)');
+    distVSspeedChart.yAxis.axisLabel('Speed (Kmph)');
 
                 d3.select('#chart5')
                     .attr('width', 400)
